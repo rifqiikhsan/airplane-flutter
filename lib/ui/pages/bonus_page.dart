@@ -13,7 +13,7 @@ class BonusPage extends StatelessWidget {
         width: 300,
         height: 211,
         decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage(
               'assets/image_card.png',
             ),
@@ -22,7 +22,7 @@ class BonusPage extends StatelessWidget {
             BoxShadow(
               color: kPrimaryColor.withOpacity(0.5),
               blurRadius: 50,
-              offset: Offset(0, 10),
+              offset: const Offset(0, 10),
             ),
           ],
         ),
@@ -55,8 +55,8 @@ class BonusPage extends StatelessWidget {
                 Container(
                   width: 24,
                   height: 24,
-                  margin: EdgeInsets.only(right: 6),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(right: 6),
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
                         'assets/logo_plane.png',
@@ -73,7 +73,7 @@ class BonusPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Text(
@@ -97,7 +97,7 @@ class BonusPage extends StatelessWidget {
 
     Widget title() {
       return Container(
-        margin: EdgeInsets.only(top: 80),
+        margin: const EdgeInsets.only(top: 80),
         child: Text(
           'Big Bonus 🎉',
           style: blackTextStyle.copyWith(
@@ -110,7 +110,7 @@ class BonusPage extends StatelessWidget {
 
     Widget subtitle() {
       return Container(
-        margin: EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.only(top: 10),
         child: Text(
           'We give you early credit so that\nyou can buy a flight ticket',
           style: greyTextStyle.copyWith(
@@ -129,7 +129,7 @@ class BonusPage extends StatelessWidget {
           Navigator.pushNamed(context, '/main');
         },
         width: 220,
-        margin: EdgeInsets.only(top: 50),
+        margin: const EdgeInsets.only(top: 50),
       );
     }
 
