@@ -1,5 +1,8 @@
 # airplane
 
+#For run this application, run this command
+$ flutter pub get
+
 A new Flutter project.
 
 ## Getting Started
