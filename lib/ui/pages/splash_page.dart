@@ -22,6 +22,7 @@ class _SplashPageState extends State<SplashPage> {
         Navigator.pushNamedAndRemoveUntil(
             context, '/get-started', (route) => false);
       } else {
+        print(user.email);
         Navigator.pushNamedAndRemoveUntil(context, '/main', (route) => false);
       }
     });
