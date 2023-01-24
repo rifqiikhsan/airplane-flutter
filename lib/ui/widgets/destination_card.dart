@@ -18,7 +18,7 @@ class DestinationCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => DetailPage(),
+            builder: (context) => DetailPage(destination),
           ),
         );
       },
@@ -41,10 +41,10 @@ class DestinationCard extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(18),
                 image: DecorationImage(
-                  image: NetworkImage(
-                    destination.imageUrl,
-                  ),
-                ),
+                    image: NetworkImage(
+                      destination.imageUrl,
+                    ),
+                    fit: BoxFit.cover),
               ),
               child: Align(
                 alignment: Alignment.topRight,

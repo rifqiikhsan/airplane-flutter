@@ -171,9 +171,11 @@ class ChooseSeatPage extends StatelessWidget {
                 children: [
                   const SeatItem(
                     status: 2,
+                    id: 'A1',
                   ),
                   const SeatItem(
                     status: 2,
+                    id: 'B1',
                   ),
                   Container(
                     width: 48,
@@ -189,9 +191,11 @@ class ChooseSeatPage extends StatelessWidget {
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'C1',
                   ),
                   const SeatItem(
                     status: 2,
+                    id: 'D1',
                   ),
                 ],
               ),
@@ -204,9 +208,11 @@ class ChooseSeatPage extends StatelessWidget {
                 children: [
                   const SeatItem(
                     status: 0,
+                    id: 'A2',
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'B2',
                   ),
                   Container(
                     width: 48,
@@ -222,9 +228,11 @@ class ChooseSeatPage extends StatelessWidget {
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'C2',
                   ),
                   const SeatItem(
                     status: 2,
+                    id: 'D2',
                   ),
                 ],
               ),
@@ -237,9 +245,11 @@ class ChooseSeatPage extends StatelessWidget {
                 children: [
                   const SeatItem(
                     status: 1,
+                    id: 'A3',
                   ),
                   const SeatItem(
                     status: 1,
+                    id: 'B3',
                   ),
                   Container(
                     width: 48,
@@ -255,9 +265,11 @@ class ChooseSeatPage extends StatelessWidget {
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'C3',
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'D3',
                   ),
                 ],
               ),
@@ -270,9 +282,11 @@ class ChooseSeatPage extends StatelessWidget {
                 children: [
                   const SeatItem(
                     status: 0,
+                    id: 'A4',
                   ),
                   const SeatItem(
                     status: 2,
+                    id: 'B4',
                   ),
                   Container(
                     width: 48,
@@ -288,9 +302,11 @@ class ChooseSeatPage extends StatelessWidget {
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'C4',
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'D4',
                   ),
                 ],
               ),
@@ -303,9 +319,11 @@ class ChooseSeatPage extends StatelessWidget {
                 children: [
                   const SeatItem(
                     status: 0,
+                    id: 'A5',
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'B5',
                   ),
                   Container(
                     width: 48,
@@ -321,9 +339,11 @@ class ChooseSeatPage extends StatelessWidget {
                   ),
                   const SeatItem(
                     status: 2,
+                    id: 'C5',
                   ),
                   const SeatItem(
                     status: 0,
+                    id: 'D5',
                   ),
                 ],
               ),
