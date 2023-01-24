@@ -5,65 +5,58 @@ import '../../shared/theme.dart';
 
 class SeatItem extends StatelessWidget {
   //NOTE: 0.Avaliable, 1.Selected, 2. Unavaliable
-  final int status;
   final String id;
+  final bool isAvailable;
   const SeatItem({
     Key? key,
-    required this.status,
     required this.id,
+    this.isAvailable = true,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    bool isSelected = context.watch<SeatCubit>().isSelected(id);
+
     backgroundColor() {
-      switch (status) {
-        case 0:
-          return kAvaliableColor;
-        case 1:
+      if (!isAvailable) {
+        return kUnavailable;
+      } else {
+        if (isSelected) {
           return kPrimaryColor;
-        case 2:
-          return kUnavailable;
-        default:
-          return kUnavailable;
+        } else {
+          return kAvaliableColor;
+        }
       }
     }
 
     borderColor() {
-      switch (status) {
-        case 0:
-          return kPrimaryColor;
-        case 1:
-          return kPrimaryColor;
-        case 2:
-          return kUnavailable;
-        default:
-          return kUnavailable;
+      if (!isAvailable) {
+        return kUnavailable;
+      } else {
+        return kPrimaryColor;
       }
     }
 
     child() {
-      switch (status) {
-        case 0:
-          return SizedBox();
-        case 1:
-          return Center(
-            child: Text(
-              'YOU',
-              style: whiteTextStyle.copyWith(
-                fontWeight: semiBold,
-              ),
+      if (isSelected) {
+        return Center(
+          child: Text(
+            'YOU',
+            style: whiteTextStyle.copyWith(
+              fontWeight: semiBold,
             ),
-          );
-        case 2:
-          return SizedBox();
-        default:
-          return SizedBox();
+          ),
+        );
+      } else {
+        return SizedBox();
       }
     }
 
     return GestureDetector(
       onTap: () {
-        context.read<SeatCubit>().selectSeat(id);
+        if (isAvailable) {
+          context.read<SeatCubit>().selectSeat(id);
+        }
       },
       child: Container(
         width: 48,
